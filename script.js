@@ -1,3 +1,19 @@
+import Ribbons from './Ribbons.js';
+
+// Initialize Ribbons component as a page-wide cursor effect
+const ribbonsContainer = document.getElementById('ribbons-container');
+if (ribbonsContainer) {
+  new Ribbons(ribbonsContainer, {
+    colors: ['#5227FF'], // Electric purple/blue matching the usage example
+    baseThickness: 30,
+    speedMultiplier: 0.5,
+    maxAge: 500,
+    enableFade: false,
+    enableShaderEffect: false,
+    backgroundColor: [0, 0, 0, 0] // fully transparent overlay
+  });
+}
+
 const revealItems = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver(
