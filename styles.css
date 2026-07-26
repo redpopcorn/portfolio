@@ -306,6 +306,65 @@ a {
     align-self: end;
 }
 
+.resume-download-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.download-btn.btn-primary {
+    background: linear-gradient(
+        135deg,
+        rgba(143, 125, 255, 0.4),
+        rgba(79, 209, 197, 0.3)
+    );
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(143, 125, 255, 0.2);
+}
+
+.download-btn.btn-primary:hover {
+    background: linear-gradient(
+        135deg,
+        rgba(143, 125, 255, 0.5),
+        rgba(79, 209, 197, 0.4)
+    );
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(143, 125, 255, 0.35);
+}
+
+.download-btn.btn-secondary {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.download-btn.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.download-icon {
+    flex-shrink: 0;
+    transition: transform 180ms ease;
+}
+
+.download-btn:hover .download-icon {
+    transform: translateY(2px);
+}
+
 .hero-panel ul {
     margin: 14px 0 22px;
     padding-left: 18px;
