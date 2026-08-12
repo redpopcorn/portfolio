@@ -514,6 +514,7 @@ a {
 .metric,
 .capability,
 .project-card,
+.experience-card,
 .contact-card {
     border-radius: var(--radius-xl);
 }
@@ -645,6 +646,90 @@ a {
 
 .capability {
     padding: 24px;
+}
+
+/* Experience Section */
+.experience {
+    padding: 96px 0 12px;
+}
+
+.experience-list {
+    display: grid;
+    gap: 20px;
+}
+
+.experience-card {
+    padding: 32px;
+    display: grid;
+    gap: 20px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+}
+
+.experience-title-area {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.experience-role {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent-2), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.experience-date {
+    font-size: 0.95rem;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-body {
+    display: grid;
+    gap: 16px;
+}
+
+.experience-body p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.experience-bullets {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.experience-bullets li {
+    margin-bottom: 8px;
+}
+
+.experience-bullets li:last-child {
+    margin-bottom: 0;
 }
 
 .contact-section {
@@ -808,6 +893,12 @@ a {
 
     .contact-photo {
         max-width: 180px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 }
 
